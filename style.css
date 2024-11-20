@@ -1,22 +1,52 @@
 
+
+
+
 /* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier Prime', monospace; /* Changed font to Courier Prime */
+    color: #00FF00; /* Green text color for hacker vibes */
+    background-color: black; /* Black background */
+    overflow: hidden; /* Hide scrollbars */
 }
 
-/* Center content both vertically and horizontally */
+/* Center the text vertically and horizontally */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #f0f0f0;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
     font-size: 3rem;
-    color: #333;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Binary code rain effect */
+.binary-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/png;base64,...') repeat;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Add animation for binary rain */
+@keyframes rain {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
 }
