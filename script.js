@@ -9,7 +9,7 @@ document.body.appendChild(renderer.domElement);
 
 // Load a texture for the cube's faces
 const loader = new THREE.TextureLoader();
-const texture = loader.load('https://threejsfundamentals.org/threejs/resources/images/wall.jpg');
+const texture = loader.load('454347165_7963390367088783_3223855902742788755_n.jpg');
 
 // Create a cube with texture
 const geometry = new THREE.BoxGeometry();
